@@ -1,0 +1,50 @@
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.profile-uploud{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.profile-uploud img{
+    max-width: 200px;
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.profile-uploud > input{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    outline: auto;
+    border: none;
+    /* background: antiquewhite; */
+    object-fit: cover;
+    height: 100%;
+    z-index: 2;
+   opacity: 0;
+   cursor: pointer;
+}
+.profile-uploud > p{
+    position: absolute;
+    width: 200px;
+    background: #8b8b8b7d;
+    left: 0;
+    font-size: 18px;
+    text-align: center;
+    bottom: -18px;
+    padding: 15px 0;
+   
+}
