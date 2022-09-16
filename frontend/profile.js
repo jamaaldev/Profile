@@ -1,5 +1,6 @@
 const urlProfile = "http://localhost:3000/";
-import {DaysToCome,JointDate,DaysGone} from './node_modules/birthday-test/dist/birthday-test.esm.js'
+// import {DaysToCome,JointDate,DaysGone} from './node_modules/birthday-test/dist/birthday-test.esm.js',
+import {DaysGone,DaysToCome,JointDate} from './node_modules/birthday-check/dist/birthday-check.esm.js'
 
 const customTexts ={
   textGreeting:'Happy BirthDay',
