@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,100 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="profile">
-       
+        <style>
+            /* nav bar */
+            nav {
+                display: flex;
+                height: 70px;
+                width: 100vw;
+                background-color: black;
+                align-items: center;
+            }
+
+            /* ul container */
+            nav .dropdown-container {
+                display: flex;
+                gap: 10px;
+
+            }
+
+            /* single item li */
+            .dropdown-container .dropdown-menu {
+                position: relative;
+                list-style: none;
+                color: aliceblue;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            /* div block inside 3link a tag */
+            .dropdown-list a {
+                color: black;
+                padding: 12px 16px;
+                /* border: #43434330 1px solid; */
+                text-decoration: none;
+                display: block;
+                background-color: #eecf05;
+
+            }
+
+
+            /* div block container list */
+            .dropdown-list {
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                /* padding-top controlling the space-gap you can modify u can delete the bgcolor is just for viewing space*/
+                padding-top: 26px;
+                background: red;
+                min-width: 147px;
+                box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+                z-index: 1;
+            }
+
+            /* when hover the single menu item trigger .dropdown-list and add display block */
+            .dropdown-menu:hover .dropdown-list {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .dropdown-list a:hover {
+                background-color: #eff6f3;
+            }
+        </style>
+        <nav>
+
+            <ul class="dropdown-container">
+                <li class="dropdown-menu">why brainhq
+
+                    <div class="dropdown-list">
+                        <a href="#">Link 1 brainhq</a>
+                        <a href="#">Link 2 brainhq</a>
+                        <a href="#">Link 3 brainhq</a>
+                    </div>
+                </li>
+                <li class="dropdown-menu">
+                    world class sceince
+                    <div class="dropdown-list">
+                        <div class="lo">
+
+                            <a href="#">Link 1 sceince</a>
+                            <a href="#">Link 2 sceince</a>
+                            <a href="#">Link 3 sceince</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
     </div>
     <script type="module" src="profile.js"></script>
 </body>
+
 </html>
